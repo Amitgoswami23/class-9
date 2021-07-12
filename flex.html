@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explain Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        
+        }
+        h1{
+            text-align:center;
+            padding: 20px;
+            background-image: linear-gradient(orange,yellow);
+            color:white;
+        }
+
+        .container{
+            margin-top:20px;
+            display: flex;
+            justify-content:center;
+            
+        }
+
+        .box{
+            background-color:tomato;
+            border-radius:50px;
+            width: 200px;
+            height: 200px;
+            border: 3px solid rebeccapurple;
+            font-size: 3rem;
+            margin-right: 20px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .main{
+            height:500px;
+            width: 100%;
+            border: 1px solid blue;
+            margin-top: 50px;
+            display: flex;
+            align-items: stretch;
+        }
+        .row{
+            width: 200px;
+            border: 2px dotted blue;
+            margin-top: 50px;
+
+        }
+
+        #row2{
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Explain Flex in CSS</h1>
+    <div class="container">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <div class="box">BOX-4</div>
+    </div>
+
+    <div class="main">
+        <div  class="row">amit1</div>
+        <div id="row2" class="row">amit2</div>
+    </div>
+</body>
+</html>

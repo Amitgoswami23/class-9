@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <title>Form</title>
+    <style>
+
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .login-container{
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-form{
+            display:flex;
+            flex-direction: column;
+            padding:20px;
+        }
+
+        .login-form h2{
+            text-align: center;
+        }
+
+        .login-form input, button{
+            font-size: 1.5rem;
+            margin-top: 15px;
+            text-align: center;
+            border: 1px solid lightgrey;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .login-form button{
+            background-image: linear-gradient(rgb(255, 0, 157), rgb(45, 0, 128));
+            color: white;
+        }
+
+        .login-form .email i{
+            font-size: 1.5rem;
+
+        }
+
+        .login-form .password i{
+            font-size: 1.5rem;
+        }
+
+        nav{
+            background-image: linear-gradient(#e66465, #9198e5);
+            padding:2rem;
+            
+        }
+
+        nav a{
+            text-decoration: none;
+            color:black;
+            font-size: 1.5rem;
+            margin-left: 3rem;
+            color:lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="far fa-address-card"></i> About</a>
+            <a href="#"><i class="fab fa-product-hunt"></i> Product</a>
+            <a href="#"><i class="fab fa-blogger-b"></i> Blog</a>
+            <a href="form.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="register.html"><i class="fas fa-sign-in-alt"></i> Register</a>
+        </nav>
+    </header>
+    <section class="login-container">
+        <form action="" method="POST" class="login-form">
+            <h2>Register Here</h2>
+            <div class="name">
+                <i class="fas fa-file-signature"></i>
+                <input type="name" name="name" placeholder="Enter Your Name">
+            </div>
+            <div class="email">
+                <i class="fas fa-envelope-open-text"></i>
+                <input type="email" name="email" placeholder="Enter Your Email">
+            </div>
+            <div class="password">
+                <i class="fas fa-unlock"></i>
+                <input type="password" name="password" placeholder="Enter Your Password">
+            </div>
+
+            <div class="password">
+                <i class="fas fa-unlock"></i>
+                <input type="password" name="password" placeholder="Confirm Your Password">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
